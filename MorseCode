@@ -1,0 +1,102 @@
+// defines My_LED to be the LED that blinks
+const pin_t MY_LED = D7;
+
+SYSTEM_THREAD(ENABLED);
+
+void setup() 
+{
+    // Sets the output pin to be MY_LED which is D7
+    pinMode(MY_LED, OUTPUT);
+}
+
+void M()
+{
+    //This is two dashes and represents M and is two dashes
+    digitalWrite(MY_LED, HIGH);
+    delay(3s);
+    digitalWrite(MY_LED, LOW);
+    digitalWrite(MY_LED, HIGH);
+    delay(3s);
+    digitalWrite(MY_LED, LOW);
+}
+
+void A()
+{
+    // this will represent A and is dot, dash
+    digitalWrite(MY_LED, HIGH);
+    delay(1s);
+    digitalWrite(MY_LED, LOW);
+    digitalWrite(MY_LED, HIGH);
+    delay(3s);
+    digitalWrite(MY_LED, LOW);
+}
+
+void T()
+{
+    // representative of a T which is one dash
+    digitalWrite(MY_LED, HIGH);
+    delay(2s);
+    digitalWrite(MY_LED, LOW);
+}
+
+void H()
+{
+    // H is represented by four dots
+    digitalWrite(MY_LED, HIGH);
+    delay(1s);
+    digitalWrite(MY_LED, LOW);
+    digitalWrite(MY_LED, HIGH);
+    delay(1s);
+    digitalWrite(MY_LED, LOW);
+    digitalWrite(MY_LED, HIGH);
+    delay(1s);
+    digitalWrite(MY_LED, LOW);
+    digitalWrite(MY_LED, HIGH);
+    delay(1s);
+    digitalWrite(MY_LED, LOW);
+}
+
+void E()
+{
+    // this is representative of E and is made with one dot
+    digitalWrite(MY_LED, HIGH);
+    delay(1s);
+    digitalWrite(MY_LED, LOW);
+}
+
+void W()
+{
+    // W is represented by dot, dash, dash
+    digitalWrite(MY_LED, HIGH);
+    delay(1s);
+    digitalWrite(MY_LED, LOW);
+    digitalWrite(MY_LED, HIGH);
+    delay(3s);
+    digitalWrite(MY_LED, LOW);
+    digitalWrite(MY_LED, HIGH);
+    delay(3s);
+    digitalWrite(MY_LED, LOW);
+}
+void loop() 
+{
+    M();
+    delay(3s);
+    
+    A();
+    delay(3s);
+    
+    T();
+    delay(3s);
+    
+    T();
+    delay(3s);
+    
+    H();
+    delay(3s);
+    
+    E();
+    delay(3s);
+    
+    W();
+    delay(5s);
+}
